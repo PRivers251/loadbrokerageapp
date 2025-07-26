@@ -1,0 +1,17 @@
+
+
+
+.nav-link {
+    color: var(--accent-one);
+}
+.nav-link:hover {
+    color: lightgray
+}
+
+.navbar-brand {
+    color: var(--accent-one);
+}
+.navbar-brand:hover {
+    color: lightgray;
+}
+

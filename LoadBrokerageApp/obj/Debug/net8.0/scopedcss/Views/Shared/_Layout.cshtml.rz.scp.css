@@ -7,21 +7,6 @@ a.navbar-brand[b-2y5tg96qg8] {
   word-break: break-all;
 }
 
-a[b-2y5tg96qg8] {
-  color: #0077cc;
-}
-
-.btn-primary[b-2y5tg96qg8] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active[b-2y5tg96qg8], .nav-pills .show > .nav-link[b-2y5tg96qg8] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
 
 .border-top[b-2y5tg96qg8] {
   border-top: 1px solid #e5e5e5;
@@ -32,6 +17,20 @@ a[b-2y5tg96qg8] {
 
 .box-shadow[b-2y5tg96qg8] {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.register-button[b-2y5tg96qg8] {
+  border: 1px solid black;
+  width: fit-content;
+  border-radius: 3px;
+  padding-inline: .3rem;
+}
+
+.register-button:hover[b-2y5tg96qg8] {
+  background-color: var(--primary);
+}
+.register-button.a:hover[b-2y5tg96qg8] {
+  color:white;
 }
 
 button.accept-policy[b-2y5tg96qg8] {
