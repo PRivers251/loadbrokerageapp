@@ -4,6 +4,7 @@
   --primary: #328EFF;
   --secondary: #fbf9ff;
   --accent-one: #000807;
+  --accent-one-opacity-50: #0008072a;
   --accent-two: #16425B;
 }
 
@@ -31,6 +32,16 @@ body {
 }
 
 form {
+  max-width: 25rem;
+  margin:auto;
+  border: 1px solid;
+  border-color: var(--accent-one-opacity-50);
+  border-radius: 3px;
+  padding: 1rem;
+  box-shadow: #000807;
+}
+
+form h1, form h2, form h3 {
   margin-inline: auto;
   margin-block: 2rem;
   text-align: center;
