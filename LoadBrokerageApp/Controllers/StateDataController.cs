@@ -35,9 +35,23 @@ namespace LoadBrokerageApp.Controllers
 
                 catch (JsonException ex)
                 {
-                    Console.Write($"Error deserializing states_titlecase.json: {ex.Message}")
+                    Console.Write($"Error deserializing states_titlecase.json: {ex.Message}");
+                    ViewData["ErrorMessage"] = "Could not load product data. Please try again later. ";
                 }
+
+                catch (IOException ex)
+                {
+                    Console.Write($"Error reading states_titlecase.json file: {ex.Message}");
+                    ViewData["ErrorMessage"] = "Could not access states_titlecase.json file.";
+                }
+            }
+            else
+            {
+                Console.Write($"states_titlecase.json not found at: {filePath}");
+                ViewData["ErrorMessage"] = "State data file not found.";
+            }
+
+            return View();
             }
         }
     }
-} 

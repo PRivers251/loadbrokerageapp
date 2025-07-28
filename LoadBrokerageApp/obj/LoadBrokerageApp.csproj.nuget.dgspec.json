@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\prive\\Documents\\ProgrammingProjects\\loadbrokerageapp\\LoadBrokerageApp\\LoadBrokerageApp.csproj": {}
+    "C:\\Users\\patrick.rivers\\Documents\\ProgrammingProjects\\LoadBrokerageApp\\LoadBrokerageApp\\LoadBrokerageApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\prive\\Documents\\ProgrammingProjects\\loadbrokerageapp\\LoadBrokerageApp\\LoadBrokerageApp.csproj": {
+    "C:\\Users\\patrick.rivers\\Documents\\ProgrammingProjects\\LoadBrokerageApp\\LoadBrokerageApp\\LoadBrokerageApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\prive\\Documents\\ProgrammingProjects\\loadbrokerageapp\\LoadBrokerageApp\\LoadBrokerageApp.csproj",
+        "projectUniqueName": "C:\\Users\\patrick.rivers\\Documents\\ProgrammingProjects\\LoadBrokerageApp\\LoadBrokerageApp\\LoadBrokerageApp.csproj",
         "projectName": "LoadBrokerageApp",
-        "projectPath": "C:\\Users\\prive\\Documents\\ProgrammingProjects\\loadbrokerageapp\\LoadBrokerageApp\\LoadBrokerageApp.csproj",
-        "packagesPath": "C:\\Users\\prive\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\prive\\Documents\\ProgrammingProjects\\loadbrokerageapp\\LoadBrokerageApp\\obj\\",
+        "projectPath": "C:\\Users\\patrick.rivers\\Documents\\ProgrammingProjects\\LoadBrokerageApp\\LoadBrokerageApp\\LoadBrokerageApp.csproj",
+        "packagesPath": "C:\\Users\\patrick.rivers\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\patrick.rivers\\Documents\\ProgrammingProjects\\LoadBrokerageApp\\LoadBrokerageApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\prive\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\patrick.rivers\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,24 +60,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.18, 8.0.18]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.18, 8.0.18]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.18, 8.0.18]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.18, 8.0.18]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
