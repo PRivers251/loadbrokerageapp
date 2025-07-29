@@ -4,6 +4,7 @@ using System.IO;
 using System.Text.Json;
 using Microsoft.AspNetCore.Hosting;
 using LoadBrokerageApp.Models;
+using System.Threading.Tasks;
 
 
 namespace LoadBrokerageApp.Controllers
@@ -18,9 +19,9 @@ namespace LoadBrokerageApp.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public IActionResult List()
+        public async Task<IActionResult> List()
         {
-            List<States> states = new List<States>();
+            List<States> states;
 
             string filePath = Path.Combine(_webHostEnvironment.WebRootPath, "data", "states_titlecase.json");
 
@@ -30,28 +31,27 @@ namespace LoadBrokerageApp.Controllers
                 {
                     string jsonContent = System.IO.File.ReadAllText(filePath);
 
-                    states = JsonSerializer.Deserialize<List<States>>(jsonContent);
+                    states = JsonSerializer.Deserialize<List<States>>(jsonContent) ?? new List<States>();
+
+                    Console.Write(states);
+                    return Json(states);
                 }
 
                 catch (JsonException ex)
                 {
-                    Console.Write($"Error deserializing states_titlecase.json: {ex.Message}");
-                    ViewData["ErrorMessage"] = "Could not load product data. Please try again later. ";
+                    return NotFound(new { message = $"File not found: {ex.Message}" });
                 }
 
                 catch (IOException ex)
                 {
-                    Console.Write($"Error reading states_titlecase.json file: {ex.Message}");
-                    ViewData["ErrorMessage"] = "Could not access states_titlecase.json file.";
+                    return BadRequest(new {message = $"Cannot read data: {ex.Message}"});
                 }
             }
             else
             {
-                Console.Write($"states_titlecase.json not found at: {filePath}");
-                ViewData["ErrorMessage"] = "State data file not found.";
+                return StatusCode(500, new {error = "Server error."});
             }
 
-            return View();
             }
         }
     }

@@ -6,7 +6,7 @@ namespace LoadBrokerageApp.Controllers
 {
     public class ShipperController : Controller
     {
-        public IActionResult NewShipper()
+        public IActionResult NewShipper(StateDataController stateData)
         {
            return View(new Shippers());
         }
