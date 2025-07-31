@@ -47,6 +47,6 @@ form h1, form h2, form h3 {
   text-align: center;
 }
 
-form input {
+form input, form select {
   margin-block: 1rem;
 }
