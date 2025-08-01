@@ -5,7 +5,7 @@ namespace LoadBrokerageApp.Models
     public class Loads
     {
         // General Load Information
-        public required Guid LoadId { get; set; }
+        public required int LoadsId { get; set; }
         public required decimal NumberOfStops { get; set; }
         public required float LoadWeight { get; set; }
         public required string LoadDescription { get; set; }

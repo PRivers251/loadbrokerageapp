@@ -10,22 +10,22 @@
 
             <div class="form-group">
                 <label asp-for="Shipper.Shipper">Shipper Name: </label>
-                <input id="Shipper" class="form-control" />
+                <input asp-for="Shipper.Shipper" id="Shipper" class="form-control" />
             </div>
 
              <div class="form-group">
                 <label asp-for="Shipper.ShipperAddressLine1">Address: </label>
-                <input id="ShipperAddressLine1" class="form-control" />
+                <input asp-for="Shipper.ShipperAddressLine1" id="ShipperAddressLine1" class="form-control" />
             </div>
 
             <div class="form-group">
                 <label asp-for="Shipper.ShipperAddressLine2">Suite / Office / Building: </label>
-                <input id="ShipperAddressLine2" class="form-control" />
+                <input asp-for="Shipper.ShipperAddressLine2" id="ShipperAddressLine2" class="form-control" />
             </div>
 
             <div class="form-group">
                 <label asp-for="Shipper.ShipperCity">City: </label>
-                <input id="ShipperCity" class="form-control" />
+                <input asp-for="Shipper.ShipperCity" id="ShipperCity" class="form-control" />
             </div>
 
             <div class="form-group">
@@ -36,9 +36,33 @@
 
             <div class="form-group">
                 <label asp-for="Shipper.ShipperPostalCode">Zip Code: </label>
-                <input asp-form="Shipper.ShipperPostalCode" id="ShipperPostalCode" class="form-control" />
+                <input asp-for="Shipper.ShipperPostalCode" id="ShipperPostalCode" class="form-control" />
             </div>
 
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperPhone">Phone Number: </label>
+                <input asp-for="Shipper.ShipperPhone" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperPhone">Phone Number: </label>
+                <input asp-for="Shipper.ShipperPhone" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperContactPerson">Contact Person: </label>
+                <input asp-for="Shipper.ShipperContactPerson" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperContactPersonPhone">Contact Phone Number: </label>
+                <input asp-for="Shipper.ShipperContactPersonPhone" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperContactPersonEmail">Contact Email: </label>
+                <input asp-for="Shipper.ShipperContactPersonEmail" class="form-control" />
+            </div>
             </div>
         </form>
     </div>

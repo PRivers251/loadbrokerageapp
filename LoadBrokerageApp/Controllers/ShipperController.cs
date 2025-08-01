@@ -6,24 +6,27 @@ using LoadBrokerageApp.Services;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace LoadBrokerageApp.Controllers
 {
 
     public class NewShipperViewModel
     {
-        public Shippers Shipper { get; set; }
-        public List<SelectListItem> AvailableStates { get; set; }
+        public Shippers? Shipper { get; set; }
+        public List<SelectListItem>? AvailableStates { get; set; }
     }
 
     public class ShipperController : Controller
     {
         private readonly IStateDataService _stateDataService;
+        private readonly DbContext _context;
 
         // Constructor
-        public ShipperController(IStateDataService StateDataService)
+        public ShipperController(IStateDataService StateDataService, DbContext context)
         {
             _stateDataService = StateDataService;
+            _context = context;
         }
 
         [HttpGet]
