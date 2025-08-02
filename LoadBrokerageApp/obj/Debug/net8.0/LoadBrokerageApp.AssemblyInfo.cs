@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoadBrokerageApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24174758505ea9da4fc136fa44c5470616664dbf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+269c34ed7dc0343a32401c34efd56c71bfaff260")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoadBrokerageApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoadBrokerageApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
