@@ -17,53 +17,53 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LoadBrokerageApp
 build_property.RootNamespace = LoadBrokerageApp
-build_property.ProjectDir = C:\Users\prive\Documents\ProgrammingProjects\loadbrokerageapp\LoadBrokerageApp\
+build_property.ProjectDir = C:\Users\patrick.rivers\Documents\ProgrammingProjects\LoadBrokerageApp\LoadBrokerageApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\prive\Documents\ProgrammingProjects\loadbrokerageapp\LoadBrokerageApp
+build_property.MSBuildProjectDirectory = C:\Users\patrick.rivers\Documents\ProgrammingProjects\LoadBrokerageApp\LoadBrokerageApp
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/prive/Documents/ProgrammingProjects/loadbrokerageapp/LoadBrokerageApp/Views/Home/Index.cshtml]
+[C:/Users/patrick.rivers/Documents/ProgrammingProjects/LoadBrokerageApp/LoadBrokerageApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prive/Documents/ProgrammingProjects/loadbrokerageapp/LoadBrokerageApp/Views/Home/Privacy.cshtml]
+[C:/Users/patrick.rivers/Documents/ProgrammingProjects/LoadBrokerageApp/LoadBrokerageApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prive/Documents/ProgrammingProjects/loadbrokerageapp/LoadBrokerageApp/Views/Loads/Index.cshtml]
+[C:/Users/patrick.rivers/Documents/ProgrammingProjects/LoadBrokerageApp/LoadBrokerageApp/Views/Loads/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9hZHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prive/Documents/ProgrammingProjects/loadbrokerageapp/LoadBrokerageApp/Views/Shared/Error.cshtml]
+[C:/Users/patrick.rivers/Documents/ProgrammingProjects/LoadBrokerageApp/LoadBrokerageApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prive/Documents/ProgrammingProjects/loadbrokerageapp/LoadBrokerageApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/patrick.rivers/Documents/ProgrammingProjects/LoadBrokerageApp/LoadBrokerageApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prive/Documents/ProgrammingProjects/loadbrokerageapp/LoadBrokerageApp/Views/Shipper/Index.cshtml]
+[C:/Users/patrick.rivers/Documents/ProgrammingProjects/LoadBrokerageApp/LoadBrokerageApp/Views/Shipper/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpcHBlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prive/Documents/ProgrammingProjects/loadbrokerageapp/LoadBrokerageApp/Views/Shipper/NewShipper.cshtml]
+[C:/Users/patrick.rivers/Documents/ProgrammingProjects/LoadBrokerageApp/LoadBrokerageApp/Views/Shipper/NewShipper.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpcHBlclxOZXdTaGlwcGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prive/Documents/ProgrammingProjects/loadbrokerageapp/LoadBrokerageApp/Views/_ViewImports.cshtml]
+[C:/Users/patrick.rivers/Documents/ProgrammingProjects/LoadBrokerageApp/LoadBrokerageApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prive/Documents/ProgrammingProjects/loadbrokerageapp/LoadBrokerageApp/Views/_ViewStart.cshtml]
+[C:/Users/patrick.rivers/Documents/ProgrammingProjects/LoadBrokerageApp/LoadBrokerageApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/prive/Documents/ProgrammingProjects/loadbrokerageapp/LoadBrokerageApp/Views/Shared/_Layout.cshtml]
+[C:/Users/patrick.rivers/Documents/ProgrammingProjects/LoadBrokerageApp/LoadBrokerageApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2y5tg96qg8

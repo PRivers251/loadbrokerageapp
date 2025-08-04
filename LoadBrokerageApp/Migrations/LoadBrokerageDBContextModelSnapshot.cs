@@ -244,15 +244,18 @@ namespace LoadBrokerageApp.Migrations
 
             modelBuilder.Entity("LoadBrokerageApp.Models.Shippers", b =>
                 {
-                    b.Property<int>("ShippersId")
+                    b.Property<Guid>("ShippersId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
+                        .HasColumnType("uuid")
                         .HasDefaultValueSql("uuid_generate_v4()");
 
                     b.Property<DateTime?>("ContractExpirationDate")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<DateTime?>("ContractSignedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<decimal>("LoadsCompleted")
@@ -267,7 +270,6 @@ namespace LoadBrokerageApp.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("ShipperAddressLine2")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("ShipperCity")

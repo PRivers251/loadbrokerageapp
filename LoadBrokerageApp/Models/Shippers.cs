@@ -12,8 +12,9 @@ namespace LoadBrokerageApp.Models
         [Required(ErrorMessage = "You must enter your business name.")]
         public string Shipper { get; set; } = string.Empty;
         public Guid ShippersId { get; set; }
+        public DateTime CreatedDate { get; set; }
         public string ShipperAddressLine1 { get; set; } = string.Empty;
-        public string ShipperAddressLine2 { get; set; } = string.Empty;
+        public string? ShipperAddressLine2 { get; set; }
         public string ShipperCity { get; set; } = string.Empty;
         public string ShipperState { get; set; } = string.Empty;
         public string ShipperPostalCode { get; set; } = string.Empty;
@@ -23,12 +24,16 @@ namespace LoadBrokerageApp.Models
         public string? ShipperContactPersonEmail { get; set; }
 
 
-
         // Relationship Information
         [DataType(DataType.DateTime)]
-        public DateTime? ContractSignedDate { get; set; } = new DateTime();
+        public DateTime? ContractSignedDate { get; set; }
         [DataType(DataType.DateTime)]
-        public DateTime? ContractExpirationDate { get; set; } = new DateTime().AddYears(1);
+        public DateTime? ContractExpirationDate { get; set; }
         public decimal LoadsCompleted { get; set; } = 0;
+
+        public Shippers()
+        {
+            CreatedDate = DateTime.UtcNow;
+        }
     }
 }

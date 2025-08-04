@@ -6,6 +6,7 @@ namespace LoadBrokerageApp.Models
     {
         // General Load Information
         public required Guid LoadsId { get; set; }
+        public required DateTime CreatedDate = new DateTime().ToUniversalTime();
         public required decimal NumberOfStops { get; set; }
         public required float LoadWeight { get; set; }
         public required string LoadDescription { get; set; }

@@ -59,7 +59,7 @@ namespace LoadBrokerageApp.Controllers
             {
                 _context.Shippers.Add(shipper);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "HomeController");
+                return RedirectToAction("Index", "Home");
             }
 
             return View(shipper);
