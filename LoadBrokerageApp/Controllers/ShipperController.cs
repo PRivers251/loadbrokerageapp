@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using LoadBrokerageApp.Data;
+using System.Web;
 
 namespace LoadBrokerageApp.Controllers
 {
@@ -20,10 +22,10 @@ namespace LoadBrokerageApp.Controllers
     public class ShipperController : Controller
     {
         private readonly IStateDataService _stateDataService;
-        private readonly DbContext _context;
+        private readonly LoadBrokerageDBContext _context;
 
         // Constructor
-        public ShipperController(IStateDataService StateDataService, DbContext context)
+        public ShipperController(IStateDataService StateDataService, LoadBrokerageDBContext context)
         {
             _stateDataService = StateDataService;
             _context = context;
@@ -47,6 +49,20 @@ namespace LoadBrokerageApp.Controllers
             };
 
             return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Shippers shipper)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Shippers.Add(shipper);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "HomeController");
+            }
+
+            return View(shipper);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace LoadBrokerageApp.Models
         // General Shipper Information
         [Required(ErrorMessage = "You must enter your business name.")]
         public string Shipper { get; set; } = string.Empty;
-        public int ShippersId { get; set; }
+        public Guid ShippersId { get; set; }
         public string ShipperAddressLine1 { get; set; } = string.Empty;
         public string ShipperAddressLine2 { get; set; } = string.Empty;
         public string ShipperCity { get; set; } = string.Empty;

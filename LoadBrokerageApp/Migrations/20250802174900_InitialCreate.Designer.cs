@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace LoadBrokerageApp.Migrations
 {
     [DbContext(typeof(LoadBrokerageDBContext))]
-    [Migration("20250801165157_InitialCase")]
-    partial class InitialCase
+    [Migration("20250802174900_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,11 +27,10 @@ namespace LoadBrokerageApp.Migrations
 
             modelBuilder.Entity("LoadBrokerageApp.Models.Carriers", b =>
                 {
-                    b.Property<int>("CarriersId")
+                    b.Property<Guid>("CarriersId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("CarriersId"));
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("uuid_generate_v4()");
 
                     b.Property<string>("AddressLine1")
                         .IsRequired()
@@ -145,11 +144,10 @@ namespace LoadBrokerageApp.Migrations
 
             modelBuilder.Entity("LoadBrokerageApp.Models.Loads", b =>
                 {
-                    b.Property<int>("LoadsId")
+                    b.Property<Guid>("LoadsId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("LoadsId"));
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("uuid_generate_v4()");
 
                     b.Property<string>("Consignee")
                         .IsRequired()
@@ -251,9 +249,8 @@ namespace LoadBrokerageApp.Migrations
                 {
                     b.Property<int>("ShippersId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ShippersId"));
+                        .HasColumnType("integer")
+                        .HasDefaultValueSql("uuid_generate_v4()");
 
                     b.Property<DateTime?>("ContractExpirationDate")
                         .HasColumnType("timestamp with time zone");

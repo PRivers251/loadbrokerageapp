@@ -42,3 +42,14 @@
         margin-inline: 1rem;
 }
 }
+
+.submit-container {
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.form-submit-btn {
+    background-color: var(--primary);
+    margin-inline: auto;
+    width: fit-content;
+}

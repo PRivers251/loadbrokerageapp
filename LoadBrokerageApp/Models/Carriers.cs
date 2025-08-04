@@ -11,7 +11,7 @@ namespace LoadBrokerageApp.Models
 
         // Carrier General Information
         [Required]
-        public required int CarriersId { get; set; }
+        public required Guid CarriersId { get; set; }
         [Required]
         public required string CarrierName { get; set; }
         public string? DBAName { get; set; }

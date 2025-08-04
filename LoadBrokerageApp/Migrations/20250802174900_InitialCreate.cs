@@ -1,13 +1,12 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace LoadBrokerageApp.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCase : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,8 +15,7 @@ namespace LoadBrokerageApp.Migrations
                 name: "Carriers",
                 columns: table => new
                 {
-                    CarriersId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    CarriersId = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
                     CarrierName = table.Column<string>(type: "text", nullable: false),
                     DBAName = table.Column<string>(type: "text", nullable: true),
                     ContactPerson = table.Column<string>(type: "text", nullable: false),
@@ -57,8 +55,7 @@ namespace LoadBrokerageApp.Migrations
                 name: "Loads",
                 columns: table => new
                 {
-                    LoadsId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    LoadsId = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
                     NumberOfStops = table.Column<decimal>(type: "numeric", nullable: false),
                     LoadWeight = table.Column<float>(type: "real", nullable: false),
                     LoadDescription = table.Column<string>(type: "text", nullable: false),
@@ -94,8 +91,7 @@ namespace LoadBrokerageApp.Migrations
                 name: "Shippers",
                 columns: table => new
                 {
-                    ShippersId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    ShippersId = table.Column<int>(type: "integer", nullable: false, defaultValueSql: "uuid_generate_v4()"),
                     Shipper = table.Column<string>(type: "text", nullable: false),
                     ShipperAddressLine1 = table.Column<string>(type: "text", nullable: false),
                     ShipperAddressLine2 = table.Column<string>(type: "text", nullable: false),
