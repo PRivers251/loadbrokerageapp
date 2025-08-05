@@ -9,13 +9,14 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LoadBrokerageApp.Data;
 using System.Web;
+using LoadBrokerageApp.Interfaces;
 
 namespace LoadBrokerageApp.Controllers
 {
 
-    public class NewShipperViewModel
+    public class NewShipperViewModel : IViewModel<Shippers>
     {
-        public Shippers? Shipper { get; set; }
+        public Shippers? Entity { get; set; }
         public List<SelectListItem>? AvailableStates { get; set; }
     }
 
@@ -44,7 +45,7 @@ namespace LoadBrokerageApp.Controllers
 
             var viewModel = new NewShipperViewModel
             {
-                Shipper = new Shippers(),
+                Entity = new Shippers(),
                 AvailableStates = availableStates
             };
 

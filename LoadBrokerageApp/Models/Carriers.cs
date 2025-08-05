@@ -10,47 +10,51 @@ namespace LoadBrokerageApp.Models
     {
 
         // Carrier General Information
+        public Guid CarriersId { get; set; }
+        public DateTime CreatedDate { get; set; }
         [Required]
-        public required Guid CarriersId { get; set; }
-        [Required]
-        public required string CarrierName { get; set; }
+        public string CarrierName { get; set; }
         public string? DBAName { get; set; }
-        public required string ContactPerson { get; set; }
-        public required string ContactEmail { get; set; }
-        public required string ContactPhone { get; set; }
-        public required string AddressLine1 { get; set; } // Street Address
-        public required string AddressLine2 { get; set; } // Suite | Apt | Unit Number
-        public required string City { get; set; }
-        public required string State_Province { get; set; } // State | Province Code (Example: AL, NY, CA)
-        public required string PostalCode { get; set; }
-        public required string Country { get; set; }
-        public required bool HazmatCertified { get; set; }
-        public required string ELDProvider { get; set; }
+        public string ContactPerson { get; set; }
+        public string ContactEmail { get; set; }
+        public string ContactPhone { get; set; }
+        public string AddressLine1 { get; set; } // Street Address
+        public string AddressLine2 { get; set; } // Suite | Apt | Unit Number
+        public string City { get; set; }
+        public string State_Province { get; set; } // State | Province Code (Example: AL, NY, CA)
+        public string PostalCode { get; set; }
+        public string Country { get; set; }
+        public bool HazmatCertified { get; set; }
+        public string ELDProvider { get; set; }
         public string? DOTComplianceScore { get; set; }
-        public required bool IsActive { get; set; }
+        public bool IsActive { get; set; }
         public string? PrimaryEquipmentType { get; set; } // Van, Reefer, Tanker, Flatbed, etc.
 
         // DOT Compliance Carrier Information
-        public required string MC_Number { get; set; } // Valid MC Number
-        public required string USDOT_Number { get; set; } // Valid DOT Number
-        public required string OperatingAuthority { get; set; } // Active, Inactive, Revoked
-        public required string OperatingAuthorityType { get; set; } // Common Carrier, Contract Carrier, Broker, etc.
-        public required string EIN_TaxID { get; set; }
+        public string MC_Number { get; set; } // Valid MC Number
+        public string USDOT_Number { get; set; } // Valid DOT Number
+        public string OperatingAuthority { get; set; } // Active, Inactive, Revoked
+        public string OperatingAuthorityType { get; set; } // Common Carrier, Contract Carrier, Broker, etc.
+        public string EIN_TaxID { get; set; }
 
         // Insurance Information
-        public required string InsuranceProvider { get; set; }
-        public required string InsurancePolicyNumber { get; set; }
+        public string InsuranceProvider { get; set; }
+        public string InsurancePolicyNumber { get; set; }
         [DataType(DataType.Date)]
-        public required DateTime InsuranceExpirationDate { get; set; }
-        public required decimal CargoInsuranceCoverageAmount { get; set; }
-        public required decimal LiabilityInsuraceCoverageAmount { get; set; }
+        public DateTime InsuranceExpirationDate { get; set; }
+        public decimal CargoInsuranceCoverageAmount { get; set; }
+        public decimal LiabilityInsuraceCoverageAmount { get; set; }
 
         // Relationship Information
         [DataType(DataType.DateTime)]
         public DateTime? ContractSignedDate { get; set; }
         [DataType(DataType.DateTime)]
         public DateTime? ContractExpirationDate { get; set; }
-        public required decimal LoadsCompleted { get; set; }
-        
+        public decimal LoadsCompleted { get; set; }
+
+        public Carriers()
+        {
+            CreatedDate = DateTime.UtcNow;
+        }       
     }
 }
