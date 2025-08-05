@@ -1,0 +1,67 @@
+@using LoadBrokerageApp.Models;
+@model LoadBrokerageApp.Models.Carriers;
+@using Microsoft.AspNetCore.Mvc.Rendering;
+
+<section class="new-carriers-page">
+    <div></div>
+        <form asp-action="Create" asp-controller="Shipper" method="post">
+            <h3>New Shipper Sign-Up</h3>
+
+            <div class="form-group">
+                <label asp-for="CarrierName">Carrier Name: </label>
+                <input asp-for="Shipper.Shipper" id="Shipper" class="form-control" />
+            </div>
+
+             <div class="form-group">
+                <label asp-for="Shipper.ShipperAddressLine1">Address: </label>
+                <input asp-for="Shipper.ShipperAddressLine1" id="ShipperAddressLine1" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperAddressLine2">Suite / Office / Building: </label>
+                <input asp-for="Shipper.ShipperAddressLine2" id="ShipperAddressLine2" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperCity">City: </label>
+                <input asp-for="Shipper.ShipperCity" id="ShipperCity" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperState">State: </label>
+                <select type="" id="ShipperState" class="form-control" asp-for="Shipper.ShipperState" asp-items="@Model.AvailableStates">
+                    <option value="">-- Select --</option>
+                </select>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperPostalCode">Zip Code: </label>
+                <input asp-for="Shipper.ShipperPostalCode" id="ShipperPostalCode" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperPhone">Phone Number: </label>
+                <input asp-for="Shipper.ShipperPhone" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperContactPerson">Contact Person: </label>
+                <input asp-for="Shipper.ShipperContactPerson" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperContactPersonPhone">Contact Phone Number: </label>
+                <input asp-for="Shipper.ShipperContactPersonPhone" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Shipper.ShipperContactPersonEmail">Contact Email: </label>
+                <input asp-for="Shipper.ShipperContactPersonEmail" class="form-control" />
+            </div>
+
+            <div class="form-group submit-container">
+                <input type="submit" value="Submit" class="btn form-submit-btn" />
+            </div>
+            </div>
+        </form>
+    </div>
+</section>
